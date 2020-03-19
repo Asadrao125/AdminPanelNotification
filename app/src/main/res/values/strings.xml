@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AdminPanel</string>
+
+    <string-array name="Topics">
+        <item>Topics</item>
+        <item>notification</item>
+    </string-array>
+</resources>

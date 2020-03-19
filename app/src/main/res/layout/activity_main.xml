@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+
+                android:layout_gravity="center"
+                android:id="@+id/adminpanel_heading"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold|italic"
+                android:textSize="40sp"
+                android:textColor="#2955c8"
+                android:text="ADMIN PANEL">
+
+            </TextView>
+
+            <TextView
+                android:layout_below="@+id/adminpanel_heading"
+                android:id="@+id/spinner_tv"
+                android:layout_marginEnd="25sp"
+                android:textSize="18dp"
+                android:layout_marginStart="25sp"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Topics Names : "></TextView>
+            <Spinner
+                android:id="@+id/topic_type"
+                android:layout_below="@+id/spinner_tv"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25sp"></Spinner>
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_below="@+id/topic_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:hint="Title"
+                android:layout_marginTop="50sp"/>
+
+            <EditText
+                android:id="@+id/et_msg"
+                android:layout_below="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:hint="Message"
+                android:layout_marginTop="50sp"/>
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/et_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="25sp"
+                    android:hint="Enter URL of Image (optional)"
+                    android:textSize="18dp"
+                    android:layout_marginTop="50sp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/relative"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp">
+                    <Button
+                        android:background="@drawable/btn_background"
+                        android:id="@+id/btn_preview"
+                        android:layout_width="130sp"
+                        android:layout_height="wrap_content"
+                        android:text="Preview"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:layout_width="0sp"
+                    android:layout_height="70dp">
+                    <Button
+                        android:background="@drawable/btn_background"
+                        android:id="@+id/btn_post"
+                        android:layout_width="130sp"
+                        android:layout_height="wrap_content"
+                        android:text="Post"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:layout_width="0sp"
+                    android:layout_height="70dp">
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
